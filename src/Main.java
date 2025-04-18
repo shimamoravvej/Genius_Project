@@ -77,6 +77,10 @@ public class Main {
         song.addTag("Classic"); //add new  tag
         System.out.println("Average Rating: " + song.getAverageRating()); // display average rating
 
+        song.likeContent();
+        song.shareContent();
+        System.out.println("Total likes: " + song.getLikes());
+        System.out.println("Total shares: " + song.getShares());
 
         switch (choice) {
             case 1:

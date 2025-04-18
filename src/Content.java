@@ -209,4 +209,22 @@ public abstract class Content {
         this.album = albumName;
         System.out.println("Song " + title + " added to album: " + albumName);
     }
+
+    public void likeContent() {
+        likes++;
+        System.out.println("Content liked. Total likes: " + likes);
+    }
+
+    public void shareContent() {
+        shares++;
+        System.out.println("Content shared. Total shares: " + shares);
+    }
+
+    public int getLikes() {
+        return likes;
+    }
+
+    public int getShares() {
+        return shares;
+    }
 }
